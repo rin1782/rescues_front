@@ -1,6 +1,10 @@
 export default function rescueReducer(state = {rescues: []}, action) {
 
-    return state
-
+   switch(action.type) {
+        case 'FETCH_RESCUES':
+            return {rescues: action.payload}
+        default:
+            return state
+   }
 }
 

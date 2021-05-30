@@ -15,7 +15,7 @@ class RescuesContainer extends React.Component {
         return(
             <div>
                 <RescueForm/>
-                <Rescues/>
+                <Rescues rescues={this.props.rescues}/>
             </div>
         )
     }

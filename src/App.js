@@ -1,6 +1,6 @@
 import React from 'react';
 
-class App extends React.Component() {
+class App extends React.Component {
   
   componentDidMount(){
     fetch("http://localhost:3000/api/v1/rescues")
@@ -19,4 +19,4 @@ class App extends React.Component() {
   }
 }
 
-export default App;
+export default App

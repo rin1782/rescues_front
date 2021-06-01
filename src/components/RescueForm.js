@@ -18,7 +18,10 @@ class RescueForm extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addRescue(this.state)
-        
+        this.setState({
+            name: '',
+            location: ''
+        })
     }
 
     render(){

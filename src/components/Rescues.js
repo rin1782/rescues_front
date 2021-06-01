@@ -1,14 +1,15 @@
 import React from 'react' 
+import {Route} from 'react-router-dom'
+import RescueShow from './RescueShow'
 
-const Rescues = (props) => {
-    
-    
 
+export default function Rescues(props) {
+    
     return(
         <div>
-            {props.rescues.map(rescue => <li key={rescue.id}>{rescue.name} located in {rescue.location}</li>)}
+            {props.rescues.map(rescueShow => 
+            <div key={rescueShow.id}><RescueShow rescue={rescueShow}/></div>)}
         </div>
     )
 }
 
-export default Rescues

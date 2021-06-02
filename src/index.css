@@ -7,19 +7,25 @@ body {
 
 div.navLinks {
     font-family: 'Times New Roman', Times, serif;
-    border:rgb(235, 216, 190);
+    border:rgb(18, 16, 14);
     border-style: dotted;
     border-bottom: .5em;
     border-top: .5em;
     border-bottom-style: groove;
+    border-bottom-color: rgb(18, 16, 14);
     padding-bottom: .5em;
 }
 
 div.rescues {
-    border: .5cm;
-    border-color: darkolivegreen;
-    border-style: ridge;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
+}
+
+.adoptedBtn{
+    border-radius: 12px;
+}
+
+.dogShow{
+    display:inline-flexbox;
     
 }

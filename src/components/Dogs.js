@@ -10,13 +10,14 @@ const Dogs = (props) => {
     }
 
     return(
-        <div>
+        <div className="dogShow">
             {props.dogs && props.dogs.map(dog => 
-                <li key={dog.id}>{dog.name}<br></br>
-                    {dog.description}<br></br>
+                <div key={dog.id}>
+                    <h3>{dog.name}</h3>
+                    <p>{dog.description}</p>
                     
-                    <button onClick={() => handleAdopted(dog)}>Adopted</button>
-                </li>
+                    <button className="adoptedBtn" onClick={() => handleAdopted(dog)}>Adopted</button>
+                </div>
             )}
         </div>
     )

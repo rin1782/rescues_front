@@ -5,7 +5,7 @@ import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
 import {BrowserRouter as Router} from 'react-router-dom'
 import rescueReducer from './reducers/rescueReducer'
-import index from './index.css'
+import './index.css'
 
 import App from './App';
 

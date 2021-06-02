@@ -8,7 +8,7 @@ class DogsContainer extends React.Component {
     render() {
         return(
             <div>
-                <Dogs dogs={this.props.rescue && this.props.rescue.dogs}/>
+                <Dogs dogs={this.props.rescue && this.props.rescue.dogs}/><br></br>
                 <DogForm rescue={this.props.rescue}/>
             </div>
         )

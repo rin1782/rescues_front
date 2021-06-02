@@ -5,12 +5,9 @@ import {deleteDog} from '../actions/deleteDog'
 
 const Dogs = (props) => {
 
-    console.log(props.dogs)
-
     const handleAdopted = (dog) => {
         props.deleteDog(dog.id, dog.rescue_id)
     }
-
 
     return(
         <div>

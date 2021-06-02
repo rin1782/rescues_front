@@ -4,10 +4,10 @@ import {Route, Link} from 'react-router-dom';
 const NavLinks = (props) => {
 
   return (
-    <span>
+    <span className="navLinks">
       <Link to='/'>Home </Link><br></br>
-      <Link to='/rescues'>Rescues </Link><br></br>
-      <Link to='/rescues/new'> New Rescue</Link>
+      <Link to='/rescues'> Our current Rescue Centers </Link><br></br>
+      <Link to='/rescues/new'>Join the Network! - Add Rescue</Link><br></br>
     </span>
 
   )

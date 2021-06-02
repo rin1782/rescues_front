@@ -7,9 +7,9 @@ const Rescues = (props) => {
     return(
         <div className="rescues">
             {props.rescues.map(rescue => 
-          <li key={rescue.id}>
+          <h2 key={rescue.id}>
               <Link to={`/rescues/${rescue.id}`}>{rescue.name}</Link>
-          </li> )}
+          </h2> )}
         </div>
     )
 }

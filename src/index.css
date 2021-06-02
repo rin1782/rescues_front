@@ -5,10 +5,15 @@ body {
     color: antiquewhite;
 }
 
+.navLinks {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
 div.rescues {
     border: .5cm;
-    border-style:groove;
     border-color: darkolivegreen;
+    border-style: ridge;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     

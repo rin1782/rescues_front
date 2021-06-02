@@ -1,7 +1,7 @@
 import React from 'react' 
 import {Redirect} from 'react-router-dom'
 
-import DogsContainer from '../containers/DogsContainer'
+import DogsContainer from '../containers/Dogs'
 
 
 const Dog = (props) => {

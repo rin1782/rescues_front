@@ -1,6 +1,6 @@
 import React from 'react' 
 import {connect} from 'react-redux'
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import {fetchRescues} from '../actions/fetchRescues'
 import Rescues from '../components/Rescues'
 import RescueShow from '../components/RescueShow'
@@ -17,9 +17,11 @@ class RescuesContainer extends React.Component {
     render(){
         return(
             <div>
+              <Switch>
                 <Route path='/rescues/new' component={RescueForm}/>
                 <Route path='/rescues/:id' render={(routerProps) => <RescueShow {...routerProps} rescues={this.props.rescues} /> } />
                 <Route exact path='/rescues' render={(routerProps) => <Rescues {...routerProps} rescues={this.props.rescues} /> } />
+              </Switch>
             </div>
         )
     }

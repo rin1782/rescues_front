@@ -1,16 +1,22 @@
 import React from 'react'
+import {Redirect} from 'react-router-dom'
+
+import DogsContainer from '../containers/DogsContainer'
+
 
 const RescueShow = (props) => {
 
-    console.log(props)
-
     let rescueShow = props.rescues[props.match.params.id -1]
-    console.log(rescueShow)
 
     return(
-        <li>
-            {rescueShow ? rescueShow.name : null} - {rescueShow ? rescueShow.location : null}
-        </li>
+        <div>
+            <h2>
+            {rescueShow ? null : <Redirect to='/rescues'/>}
+            {rescueShow ? rescueShow.name : null}
+            </h2>
+            <p>{rescueShow ? rescueShow.location : null}</p>
+                <DogsContainer rescueShow={rescueShow} />
+        </div>
     )
 
 }

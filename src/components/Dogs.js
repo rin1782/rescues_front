@@ -14,6 +14,7 @@ const Dogs = (props) => {
             {props.dogs && props.dogs.map(dog => 
                 <li key={dog.id}>{dog.name}<br></br>
                     {dog.description}<br></br>
+                    
                     <button onClick={() => handleAdopted(dog)}>Adopted</button>
                 </li>
             )}

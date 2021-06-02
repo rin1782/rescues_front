@@ -7,6 +7,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import rescueReducer from './reducers/rescueReducer'
 import './index.css'
 
+
 import App from './App';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

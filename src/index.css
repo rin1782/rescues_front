@@ -5,9 +5,14 @@ body {
     color: antiquewhite;
 }
 
-.navLinks {
+div.navLinks {
     font-family: 'Times New Roman', Times, serif;
-    
+    border:rgb(235, 216, 190);
+    border-style: dotted;
+    border-bottom: .5em;
+    border-top: .5em;
+    border-bottom-style: groove;
+    padding-bottom: .5em;
 }
 
 div.rescues {

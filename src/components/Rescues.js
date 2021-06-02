@@ -5,7 +5,7 @@ import Rescue from './Rescue'
 const Rescues = (props) => {
     
     return(
-        <div>
+        <div className="rescues">
             {props.rescues.map(rescue => 
           <li key={rescue.id}>
               <Link to={`/rescues/${rescue.id}`}>{rescue.name}</Link>

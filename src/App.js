@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import RescuesContainer from './containers/RescuesContainer'
 import NavLinks from './components/NavLinks'
 import Home from './components/Home'
+import index from './index.css'
 
 class App extends React.Component {
 

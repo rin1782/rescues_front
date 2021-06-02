@@ -1,17 +1,18 @@
 import React from 'react' 
 import {Route, Link} from 'react-router-dom'
-import RescueShow from './RescueShow'
+import Rescue from './Rescue'
 
-
-export default function Rescues(props) {
+const Rescues = (props) => {
     
     return(
         <div>
-            {props.rescues.map(rescueShow => 
-            <li key={rescueShow.id}>
-                <Link to={`/rescues/${rescueShow.id}`}>{rescueShow.name}</Link>
-            </li>)}
+            {props.rescues.map(rescue => 
+          <li key={rescue.id}>
+              <Link to={`/rescues/${rescue.id}`}>{rescue.name}</Link>
+          </li> )}
         </div>
     )
 }
+
+export default Rescues
 

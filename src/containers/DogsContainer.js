@@ -4,12 +4,12 @@ import Dogs from '../components/Dogs'
 
 class DogsContainer extends React.Component {
 
-
+    
     render() {
         return(
             <div>
-                <DogForm/>
-                <Dogs dogs={this.props.rescueShow && this.props.rescueShow.dogs}/>
+                <Dogs dogs={this.props.rescue && this.props.rescue.dogs}/>
+                <DogForm rescue={this.props.rescue}/>
             </div>
         )
     }
@@ -17,4 +17,4 @@ class DogsContainer extends React.Component {
 }
 
 
-export default DogsContainer;
+export default DogsContainer

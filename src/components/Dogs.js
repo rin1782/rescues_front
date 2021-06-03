@@ -1,6 +1,7 @@
 import React from 'react' 
 import {connect} from 'react-redux'
 import {deleteDog} from '../actions/deleteDog'
+import Container from 'react-bootstrap/Container'
 
 
 const Dogs = (props) => {

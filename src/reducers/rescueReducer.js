@@ -14,6 +14,8 @@ export default function rescueReducer(state = {rescues: []}, action) {
                 }
             })
         }
+        // case "ADD_PIC":
+        //     return {...state, rescues: [...state.rescues, action.payload]}
         case "DELETE_DOG": 
             let adoptedDog = state.rescues.map(rescue => {
                 if (rescue.id === action.payload.id) {

@@ -1,7 +1,6 @@
 import React from 'react' 
 import {connect} from 'react-redux'
 import {addDog} from '../actions/addDog'
-import {capitalizeFirstLetter} from './CapitalizedText'
 
 
 
@@ -9,7 +8,8 @@ class DogForm extends React.Component {
 
     state = {
         name: '',
-        description: ''
+        description: '',
+        img_url: ''
     }
 
     handleChange = (event) => {
@@ -23,7 +23,8 @@ class DogForm extends React.Component {
         this.props.addDog(this.state, this.props.rescue.id)
         this.setState({
             name: '',
-            description: ''
+            description: '',
+            img_url: ''
         })
     }
 
@@ -38,6 +39,8 @@ class DogForm extends React.Component {
                     <label>Description:</label>
                     <input type="text" name="description" value={this.state.description} onChange={this.handleChange}/>
                     <br></br>
+                    <label>Cover Photo:</label>
+                    <input type="text" name="img_url" value={this.state.img_url} onChange={this.handleChange}/>
                     <input type="submit"/>
                 </form>
             </div>

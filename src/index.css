@@ -1,31 +1,59 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(96, 87, 87);
+    background-color: rgb(75, 73, 73);
     text-align: center;
     color: antiquewhite;
 }
 
 div.navLinks {
     font-family: 'Times New Roman', Times, serif;
+    font-size: small;
     border:rgb(18, 16, 14);
-    border-style: dotted;
-    border-bottom: .5em;
-    border-top: .5em;
-    border-bottom-style: groove;
-    border-bottom-color: rgb(18, 16, 14);
+    border-bottom-style:double;
     padding-bottom: .5em;
+    text-align: justify;
 }
 
 div.rescues {
+    display:block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
 }
 
 .adoptedBtn{
-    border-radius: 12px;
+    border-radius: 24px;
+    display: inline-flexbox;
+    color:aliceblue;
+    font-family:fantasy;
 }
 
-.dogShow{
-    display:inline-flexbox;
-    
+.picsBtn{
+    border-radius: 24px;
+    display: inline-flexbox;
+    color:antiquewhite;
+    font-family:fantasy;
+}
+
+.dogCard {
+    background-color: rgb(100, 109, 87);
+    padding: 15%;
+    padding-bottom: 10%;
+}
+
+.dogName {
+    text-align: center;
+    color:beige;
+    font-family:fantasy;
+    font-size:large;
+    font-weight: 200;
+}
+
+.dogInfo {
+    text-align:inherit;
+    color:rgb(194, 180, 169);
+}
+
+.dogCardContainer {
+    align-items: flex-end;
+    display: inline-flex;
 }

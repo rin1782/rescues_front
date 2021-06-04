@@ -7,6 +7,6 @@ export function fetchRescues(){
     .then(rescues => dispatch({
         type: 'FETCH_RESCUES', 
         payload: rescues
-    }))
-}
+        }))
+    }
 }

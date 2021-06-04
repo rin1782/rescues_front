@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import RescuesContainer from './containers/RescuesContainer'
 import NavLinks from './components/NavLinks'

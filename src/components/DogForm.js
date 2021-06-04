@@ -1,6 +1,7 @@
 import React from 'react' 
 import {connect} from 'react-redux'
 import {addDog} from '../actions/addDog'
+import {capitalizeFirstLetter} from './CapitalizedText'
 
 
 

@@ -1,6 +1,8 @@
 import React from 'react' 
 import {connect} from 'react-redux'
+import {Redirect} from 'react-router-dom'
 import {addRescue} from '../actions/addRescue'
+
 
 class RescueForm extends React.Component {
 
@@ -21,7 +23,8 @@ class RescueForm extends React.Component {
         this.setState({
             name: '',
             location: ''
-        })
+        },
+        this.props.history.push('/rescues'))
     }
 
     render(){

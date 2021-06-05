@@ -50,10 +50,28 @@ div.rescues {
 
 .dogInfo {
     text-align:inherit;
+    text-size-adjust:inherit;
     color:rgb(194, 180, 169);
 }
 
 .dogCardContainer {
     align-items: flex-end;
     display: inline-flex;
+    width:fit-content;
 }
+
+.dogForm {
+    color:black;
+}
+
+.newRescueName {
+    padding-top: 1em;
+    font-family: fantasy;
+    color:antiquewhite;
+}
+
+.newRescueLocation {
+    font-family: fantasy;
+    color:antiquewhite;
+}
+

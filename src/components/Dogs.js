@@ -19,17 +19,16 @@ const Dogs = (props) => {
     // }
 
     return(
-        <CardDeck className="dogCardContainer" style={{display: 'flex-inline', width: '50%', color: 'black'}}>
+        <CardDeck className="dogCardContainer" style={{display: 'flex-inline', width: 'fit-content', color: 'black'}}>
             {props.dogs && props.dogs.map(dog => 
                 <Card key={dog.id} text={dog.name.toUpperCase()}>
                     <Card.Body className="dogCard">
                     <Card.Img className="dogPic" variant="top" src={dog.img_url} alt="puppy pic" />
-                        <Card.Title className="dogName">Hi, I'm {dog.name}!</Card.Title>
+                        <Card.Title className="dogName">{dog.name}</Card.Title>
                         <Card.Text className="dogInfo">{dog.description}</Card.Text>
                         
-                        <Card.Footer className="dogFooter">
                         <Button className="adoptedBtn"variant="dark" onClick={() => handleAdopted(dog)}>Adopted</Button>
-                        </Card.Footer>
+                        
                         </Card.Body>
                 </Card>
             )}

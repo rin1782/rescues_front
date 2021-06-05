@@ -30,7 +30,7 @@ class DogForm extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className='dogForm'>
                 <h3>Add A Dog:</h3>
                 <form onSubmit={this.handleSubmit}>
                     <label>Name:</label>
@@ -40,7 +40,7 @@ class DogForm extends React.Component {
                     <input type="text" name="description" value={this.state.description} onChange={this.handleChange}/>
                     <br></br>
                     <label>Cover Photo:</label>
-                    <input type="text" name="img_url" value={this.state.img_url} onChange={this.handleChange}/>
+                    <input type="text" name="img_url" value={this.state.img_url} onChange={this.handleChange} style={{color: 'black'}}/>
                     <input type="submit"/>
                 </form>
             </div>
